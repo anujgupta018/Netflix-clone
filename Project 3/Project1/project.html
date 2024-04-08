@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My gym</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*css reset*/
+      body {
+        font-family: "Belanosima", sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("aunty.jpg");
+      }
+      .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+      }
+      .left img {
+        width: 59px;
+      }
+      .left div {
+        text-align: center;
+      }
+      .mid {
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+      }
+      .right {
+        position: absolute;
+        top: 20px;
+        right: 34px;
+        display: inline-block;
+        border: 2px yellow;
+      }
+      .navbar {
+        display: inline-block;
+      }
+      .navbar li {
+        display: inline-block;
+        font-size: 15px;
+      }
+      .navbar li a {
+        text-decoration: none;
+        color: white;
+        padding: 34px 23px;
+      }
+      .navbar li a:hover,
+      .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+      }
+      .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 2px 6px;
+        border: 2px solid grey;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        color: grey;
+      }
+      .container {
+        text-align: center;
+        border: 4px solid white;
+        margin: 106px 60px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 20px;
+      }
+      .formgroup {
+        text-align: center;
+        width: 33%;
+        border-radius: 28px;
+        border: 2px;
+        padding: 10px;
+      }
+      .formgroup button {
+        display: block;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="gymlogo.jpg" alt="" />
+        <div>Farzi Gym</div>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Fitness Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">Call us</button><button class="btn">Join us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Apply for the best Gym:</h1>
+      <form action="noaction.php">
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Enter your Name" />
+        </div>
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Enter your Age" />
+        </div>
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Enter your Gender" />
+        </div>
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Enter your Address" />
+        </div>
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Enter your Phone Number" />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
